@@ -4,7 +4,7 @@ def main():
     five_letter_words = []
 
     with open(input_file_path, "r") as f:
-        for line in f.readlines():
+        for line in f:
             word = line.strip()
             if len(word) == 5:
                 five_letter_words.append(word)

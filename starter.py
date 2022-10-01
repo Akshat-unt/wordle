@@ -62,7 +62,7 @@ def display_results(wordle: Wordle):
 def load_word_set(path: str):
     word_set = set()
     with open(path, "r") as f:
-        for line in f.readlines():
+        for line in f:
             word = line.strip().upper()
             word_set.add(word)
     return word_set
